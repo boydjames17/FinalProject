@@ -5,14 +5,8 @@ namespace AppSupportTicketSys.Models;
 
 public partial class Ticket
 {
-    public Ticket()
-    {
-        Discussions = new HashSet<Discussion>();
-        Photos = new HashSet<Photo>();
-    }
-    public int Id { get; set; }
-
-    public string Title { get; set; } = null!;
+    public Ticket(){}
+    public int TicketId { get; set; }
 
     public string Description { get; set; } = null!;
 
@@ -20,25 +14,14 @@ public partial class Ticket
 
     public int StatusId { get; set; }
 
-    public int CategoryId { get; set; }
-
-    public int PeriodId { get; set; }
-
     public int? EmployeeId { get; set; }
 
-    public int SupporterId { get; set; }
+    public int ClientName { get; set; }
 
-    public virtual Category Category { get; set; } = null!;
-
-    public virtual ICollection<Discussion> Discussions { get; set; }
+    public int ClientEmail { get; set; }
 
     public virtual Account? Employee { get; set; }
 
-    public virtual Period Period { get; set; } = null!;
-
-    public virtual ICollection<Photo> Photos { get; set; }
-
     public virtual Status Status { get; set; } = null!;
 
-    public virtual Account Supporter { get; set; } = null!;
 }

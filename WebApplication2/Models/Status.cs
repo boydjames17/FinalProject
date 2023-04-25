@@ -10,9 +10,7 @@ public partial class Status
     {
         Tickets = new HashSet<Ticket>();
     }
-    public int Id { get; set; }
-
-    public string Name { get; set; } = null!;
+    public int StatusId { get; set; }
 
     public bool Display { get; set; }
 
