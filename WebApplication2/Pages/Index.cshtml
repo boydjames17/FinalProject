@@ -1,0 +1,61 @@
+﻿@page
+@{
+    ViewData["Title"] = "Home";
+}
+
+<html lang="en" dir="ltr">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">Temp Data</div>
+                    <div class="text-two">Temp Data Temp Data</div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">Temp Data Temp Data</div>
+                    <div class="text-two">Temp Data Temp Data</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">Temp Data</div>
+                    <div class="text-two">Temp Data Temp Data</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Help Request</div>
+                <p>Please provide us with your name, contact info, and a desription of the problem you are having.</p>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your phone number">
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea placeholder="Enter a description of the problem you are having"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Send Request">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
